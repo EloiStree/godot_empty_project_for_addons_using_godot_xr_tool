@@ -1,0 +1,6 @@
+[gd_scene format=3 uid="uid://nbidehf1jqis"]
+
+[ext_resource type="Script" uid="uid://5t3jty0vswh" path="res://xr_setup_of_manual.gd" id="1_b3lqs"]
+
+[node name="Setup Open XR" type="Node" unique_id=1876950570]
+script = ExtResource("1_b3lqs")

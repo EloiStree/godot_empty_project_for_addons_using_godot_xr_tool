@@ -1,0 +1,34 @@
+[gd_scene format=3 uid="uid://cgnx2evphhjk7"]
+
+[ext_resource type="PackedScene" uid="uid://nbidehf1jqis" path="res://_/scene/prefab/setup_open_xr.tscn" id="1_p6cg0"]
+
+[sub_resource type="WorldBoundaryShape3D" id="WorldBoundaryShape3D_p6cg0"]
+
+[node name="DemoBasicXr" type="Node3D" unique_id=834757081]
+
+[node name="GoundLightAndXR" type="Node3D" parent="." unique_id=1335672974]
+
+[node name="Setup Open XR" parent="GoundLightAndXR" unique_id=1876950570 instance=ExtResource("1_p6cg0")]
+
+[node name="DirectionalLight3D" type="DirectionalLight3D" parent="GoundLightAndXR" unique_id=1704058424]
+
+[node name="XROrigin3D" type="XROrigin3D" parent="GoundLightAndXR" unique_id=379260720]
+
+[node name="XRCamera3D" type="XRCamera3D" parent="GoundLightAndXR/XROrigin3D" unique_id=879254699]
+
+[node name="XRController3D Left" type="XRController3D" parent="GoundLightAndXR/XROrigin3D" unique_id=1231807729]
+tracker = &"left_hand"
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="GoundLightAndXR/XROrigin3D/XRController3D Left" unique_id=1608075094]
+transform = Transform3D(0.02, 0, 0, 0, 0.02, 0, 0, 0, 0.02, 0, 0, 0)
+
+[node name="XRController3D Right" type="XRController3D" parent="GoundLightAndXR/XROrigin3D" unique_id=664576725]
+tracker = &"right_hand"
+
+[node name="MeshInstance3D2" type="MeshInstance3D" parent="GoundLightAndXR/XROrigin3D/XRController3D Right" unique_id=1767948283]
+transform = Transform3D(0.02, 0, 0, 0, 0.02, 0, 0, 0, 0.02, 0, 0, 0)
+
+[node name="StaticBody3D" type="StaticBody3D" parent="GoundLightAndXR" unique_id=1825214782]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="GoundLightAndXR/StaticBody3D" unique_id=301320869]
+shape = SubResource("WorldBoundaryShape3D_p6cg0")
