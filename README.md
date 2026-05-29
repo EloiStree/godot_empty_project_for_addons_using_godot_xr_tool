@@ -1,6 +1,16 @@
-# godot_empty_project_for_addons_using_godot_xr_tool
-Empty project to be cloned to start a Godot Project in with Godot XR Tools and produce realase Build
+# godot_empty_project_for_addons_using_godot_xr_tool   
+  
+> Empty project to be cloned to start a Godot Project in with Godot XR Tools and produce realase Build   
+   
+This project is design to be clone when I create a release for an tool using Godot XR and Godot XR Tool.   
 
+As my tool must work on Meta XR ( and Steam Frame when out).  
+I update this tool when both Godot store update to the new version.  
+
+Added:
+- XR Toggle
+- Debug Line
+- Vendor
 
 Create release for your addons  
 ``` init
